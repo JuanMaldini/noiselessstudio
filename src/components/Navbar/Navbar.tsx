@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
         <div className="navbar-logo">
           <div className="logo-icon">
             <img src={logo} alt="Logo"/>
-            <span className="thompson">Rodrigo Thompson</span>
+            <span className="thompson">Rodrigo</span>
           </div>
         </div>
         <div className="navbar-menu">
