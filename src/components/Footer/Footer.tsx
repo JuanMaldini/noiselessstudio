@@ -6,7 +6,7 @@ import { openInstagram, openEmail, openLinkedIn, openWhatsApp } from '../functio
 const Footer: React.FC = () => (
   <footer className="footer">
     <div>
-      © 2025 Rodrigo Thompson
+      © 2025 Rodrigo
     </div>
     <div className="footer-actions">
       <span className="footer-link" onClick={openInstagram}>Instagram</span>
