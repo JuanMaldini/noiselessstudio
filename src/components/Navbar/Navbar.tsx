@@ -2,7 +2,7 @@
 import React from 'react';
 import './Navbar.css';
 import { openEmail } from '../functions';
-import logo from "../../images/icons/logo.png";
+import logo from "/Logo.svg";
 
 const Navbar: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <div className="logo-icon">
-            <img src={logo}  alt="Logo"/>
+            <img src={logo} alt="Logo"/>
             <span className="thompson">Rodrigo Thompson</span>
           </div>
         </div>

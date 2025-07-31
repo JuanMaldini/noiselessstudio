@@ -25,8 +25,9 @@
 .logo-icon {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 
+  
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -44,12 +45,9 @@
 }
 
 .logo-icon img {
-  height: 60px;
-  width: 60px;
-  object-fit: contain;
+  height: 40px;
+  width: 40px;
   display: block;
-
-
 }
 
 .navbar-title {
@@ -89,7 +87,7 @@
   white-space: nowrap;
 }
 
-..thompson {
+.thompson {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -115,16 +113,10 @@
     padding: 0 8px;
     height: 48px;
   }
-  .logo-icon img {
-    height: 40px;
-    width: 40px;
-  }
-  .navbar-title {
-    font-size: 12px;
-  }
-  .navbar-menu {
-    gap: 18px;
-  }
+.logo-icon img {
+  height: 46px;
+  width: 46px;
+}
   .navbar-item {
     font-size: 12px;
   }
