@@ -3,6 +3,7 @@ import './App.css'
 import BasicGrid from './components/BasicGrid/BasicGrid'
 import Navbar from './components/Navbar/Navbar'
 import HeroMain from './components/HeroMain/HeroMain'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Navbar />
     <HeroMain />
     <BasicGrid />
+    <Footer />
     </>
   )
 }

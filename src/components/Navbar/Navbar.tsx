@@ -1,5 +1,7 @@
+
 import React from 'react';
 import './Navbar.css';
+import { openEmail } from '../functions';
 
 const Navbar: React.FC = () => {
   return (
@@ -7,13 +9,12 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <div className="logo-icon">
-            <img src="../../images/icons/" alt="Logo" />
+            <img src="../../images/icons/logo.png" alt="Logo" />
+            <p>Rodrigo Thompson</p>
           </div>
         </div>
         <div className="navbar-menu">
-          <a href="#about" className="navbar-item">ABOUT ME</a>
-          <a href="#projects" className="navbar-item">PROJECTS</a>
-          <a href="#contact" className="navbar-item">CONTACT</a>
+          <span className="navbar-item" onClick={openEmail} tabIndex={0} role="button">CONTACT</span>
         </div>
       </div>
     </nav>

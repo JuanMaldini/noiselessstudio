@@ -1,0 +1,29 @@
+.basicgrid-item {
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.basicgrid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.basicgrid-title {
+  display: none;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--basicgrid-title-color, #222);
+}
+
+.basicgrid-description {
+  display: none;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--basicgrid-description-color, #666);
+  text-align: center;
+  line-height: 1.4;
+}
