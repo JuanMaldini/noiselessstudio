@@ -17,17 +17,23 @@
 }
 
 .footer-link {
-  color: #b3e5fc;
+  color: #fff;
   cursor: pointer;
   margin: 0 0.5em;
   text-decoration: none;
   transition: color 0.2s;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: inherit;
   outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline;
 }
 .footer-link:hover, .footer-link:focus {
-  color: #fff;
-  text-decoration: underline;
+  color: #b3e5fc;
 }
 .footer-sep {
   color: #888;
