@@ -8,7 +8,7 @@ export function openInstagram() {
 }
 
 export function openEmail() {
-  const subject = "Contacto";
-  const body = "Hola,\n\n";
+  const subject = "Contact";
+  const body = "Hello NOISELESS Team,\n\n";
   window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
