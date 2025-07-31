@@ -22,6 +22,8 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: blur(1px);
+  filter: brightness(1);
 }
 
 .hero-overlay {

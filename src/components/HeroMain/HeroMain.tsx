@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeroMain.css';
 
-const img ='https://images.adsttc.com/media/images/5bbe/5c32/f197/ccec/bc00/002d/medium_jpg/stringio.jpg?1539202094';
+const img ='../../../public/renders/PAGINA 1.jpg';
 
 const HeroMain: React.FC = () => {
   return (
