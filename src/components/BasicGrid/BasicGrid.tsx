@@ -20,10 +20,10 @@ export default function BasicGrid() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, padding: 2 }}>
+    <Box sx={{ flexGrow: 1, padding: 2, backgroundColor: 'transparent' }}>
       <Grid container spacing={2}>
         {projects.map((project: Project, index: number) => (
-          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={index}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
             <div className="basicgrid-item" onClick={() => handleImageClick(project.path)}>
               <ImageRender project={project} index={index} />
               {project.title && (
