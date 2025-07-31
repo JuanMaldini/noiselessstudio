@@ -1,29 +1,21 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { projects, Project } from '../../data/projects';
+import ImageRender from '../ImageRender/ImageRender';
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(2),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-  height: '200px',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  gap: theme.spacing(1),
-}));
-
-const ProjectImage = styled('img')({
-  maxWidth: '100%',
-  maxHeight: '120px',
-  objectFit: 'cover',
-  borderRadius: '4px',
+const Item = styled('div')({
+  height: '250px',
+  borderRadius: '8px',
+  overflow: 'hidden',
+  position: 'relative',
+  cursor: 'pointer',
+  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+  '&:hover': {
+    transform: 'translateY(-4px)',
+    boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+  },
 });
 
 const ProjectTitle = styled('h3')(({ theme }) => ({
@@ -50,14 +42,7 @@ export default function BasicGrid() {
         {projects.map((project: Project, index: number) => (
           <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={index}>
             <Item>
-              <ProjectImage 
-                src={project.path} 
-                alt={project.title || `Project ${index + 1}`}
-                onError={(e) => {
-                  // Fallback si la imagen no se encuentra
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
+              <ImageRender project={project} index={index} />
               {project.title && (
                 <ProjectTitle>{project.title}</ProjectTitle>
               )}

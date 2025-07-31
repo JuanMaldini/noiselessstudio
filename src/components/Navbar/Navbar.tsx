@@ -6,9 +6,8 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <div className="logo-circle"></div>
           <div className="logo-icon">
-            <div className="person-icon"></div>
+            <img src="../../images/icons/" alt="Logo" />
           </div>
         </div>
         <div className="navbar-menu">
