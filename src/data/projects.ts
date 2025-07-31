@@ -6,8 +6,8 @@ export interface Project {
 }
 const sample_00 = "/renders/2.jpg";
 const sample_01 = "/renders/CONCURSO RENDERS-RODRIGO THOMANN.jpg";
-const sample_02 = "/renders/Escena Ramdom 28-Cocina- Dia+Luz LOGO.jpg";
-const sample_03 = "/renders/Escena Ramdom 28-Living- Dia+Luz.jpg";
+const sample_02 = "/renders/Escena Ramdom 28 Cocina Dia Luz LOGO.jpg";
+const sample_03 = "/renders/Escena Ramdom 28 Living Dia Luz.jpg";
 const sample_04 = "/renders/Escena Random 29-People.jpg";
 const sample_05 = "/renders/Escena Random 29.jpg";
 const sample_06 = "/renders/Escena Random 31-Close Up-Logo.jpg";
@@ -24,8 +24,7 @@ const sample_16 = "/renders/PAGINA 6.jpg";
 const sample_17 = "/renders/Sin título-1.jpg";
 const sample_18 = "/renders/View 2.jpg";
 const sample_19 = "/renders/WhatsApp Image 2025-05-06 at 19.16.55.jpg";
-const sample_20 = "/renders/name_collector.py";
-const sample_21 = "/renders/output.ts";
+
 
 export const projects: Project[] = [
   {
@@ -88,10 +87,4 @@ export const projects: Project[] = [
   {
     path: sample_19,
   },
-  {
-    path: sample_20,
-  },
-  {
-    path: sample_21,
-  }
 ];
