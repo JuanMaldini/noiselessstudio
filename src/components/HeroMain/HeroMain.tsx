@@ -14,9 +14,9 @@ const HeroMain: React.FC = () => {
         <h2 className="hero-subtitle-1 minisonFont dropShadow">3D Artist</h2>
         <h3 className="hero-subtitle-2 minisonFont dropShadow">Creating Digital Experiences</h3>
 
-        <div className="hero-text minisonFont dropShadow">
+        {/* <div className="hero-text minisonFont dropShadow">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae ab animi numquam rem laboriosam?   dicta voluptatibus ex totam, libero, eos similique ut blanditiis!</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
