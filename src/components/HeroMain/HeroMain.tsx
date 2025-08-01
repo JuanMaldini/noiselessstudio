@@ -15,8 +15,7 @@ const HeroMain: React.FC = () => {
         <h3 className="hero-subtitle-2 minisonFont dropShadow">Creating Digital Experiences</h3>
 
         <div className="hero-text minisonFont dropShadow">
-          <p>Passionate about building innovative 3D models and animations with modern technologies. 
-             Specialized in React, Node.js, and creating seamless user experiences.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae ab animi numquam rem laboriosam?   dicta voluptatibus ex totam, libero, eos similique ut blanditiis!</p>
         </div>
       </div>
     </div>
