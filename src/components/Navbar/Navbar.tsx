@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Navbar.css';
-import { openEmail } from '../functions';
+// import { openEmail } from '../functions';
 import logo from "/Logo.svg";
 import '../../App.css';
 
@@ -16,7 +16,19 @@ const Navbar: React.FC = () => {
           </div>
         </div>
         <div className="navbar-menu">
-          <span className="navbar-item minisonFont" onClick={openEmail} tabIndex={0} role="button">CONTACT</span>
+          <span
+            className="navbar-item minisonFont"
+            onClick={() => {
+              const emailEl = document.getElementById('footer-email');
+              if (emailEl) {
+                emailEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }}
+            tabIndex={0}
+            role="button"
+          >
+            CONTACT
+          </span>
         </div>
       </div>
     </nav>

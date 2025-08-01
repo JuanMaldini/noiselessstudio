@@ -8,7 +8,7 @@ const Footer: React.FC = () => (
     <div className="footer-actions">
       <span className="footer-link" onClick={openInstagram}>Instagram</span>
       <span className="footer-sep">|</span>
-      <span className="footer-link" onClick={openEmail}>noiseless3d@gmail.com</span>
+      <span className="footer-link" id="footer-email" onClick={openEmail}>noiseless3d@gmail.com</span>
     </div>
     <div>
       © 2025 NOISELESS. All rights reserved.
