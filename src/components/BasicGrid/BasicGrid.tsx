@@ -9,14 +9,14 @@ import Modal from '../Modal/Modal';
 
 
 export default function BasicGrid() {
-  const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
+  const [selectedIndex, setSelectedIndex] = React.useState<number | null>(null);
 
-  const handleImageClick = (path: string) => {
-    setSelectedImage(path);
+  const handleImageClick = (index: number) => {
+    setSelectedIndex(index);
   };
 
   const handleCloseModal = () => {
-    setSelectedImage(null);
+    setSelectedIndex(null);
   };
 
   return (
@@ -24,7 +24,7 @@ export default function BasicGrid() {
       <Grid container spacing={2}>
         {projects.map((project: Project, index: number) => (
           <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-            <div className="basicgrid-item" onClick={() => handleImageClick(project.path)}>
+            <div className="basicgrid-item" onClick={() => handleImageClick(index)}>
               <ImageRender project={project} index={index} />
               {project.title && (
                 <h3 className="basicgrid-title">{project.title}</h3>
@@ -36,8 +36,14 @@ export default function BasicGrid() {
           </Grid>
         ))}
       </Grid>
-      {selectedImage && (
-        <Modal imagePath={selectedImage} onClose={handleCloseModal} />
+      {selectedIndex !== null && (
+        <Modal 
+          currentIndex={selectedIndex}
+          images={projects.map(p => p.path)}
+          titles={projects.map(p => p.title)}
+          descriptions={projects.map(p => p.description)}
+          onClose={handleCloseModal}
+        />
       )}
     </Box>
   );
