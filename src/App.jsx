@@ -4,7 +4,6 @@ import BasicGrid from './components/BasicGrid/BasicGrid'
 import Navbar from './components/Navbar/Navbar'
 import HeroMain from './components/HeroMain/HeroMain'
 import Footer from './components/Footer/Footer'
-
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,5 +16,4 @@ function App() {
     </>
   )
 }
-
 export default App
