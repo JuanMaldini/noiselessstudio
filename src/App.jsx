@@ -5,7 +5,6 @@ import Navbar from './components/Navbar/Navbar'
 import HeroMain from './components/HeroMain/HeroMain'
 import Footer from './components/Footer/Footer'
 
-
 function App() {
   const [count, setCount] = useState(0)
 
