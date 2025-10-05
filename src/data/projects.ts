@@ -36,12 +36,12 @@ export const projects: Project[] = [
   {
     path: sample_02,
     title: "360 Viewer",
-    description: "https://www.vizor3d.com/noiseless_sample01",
+    description: "https://www.vizor3d.com/",
   },
   {
     path: sample_03,
     title: "360 Viewer",
-    description: "https://www.vizor3d.com/noiseless_sample01",
+    description: "https://www.vizor3d.com/",
   },
   {
     path: sample_04,
